@@ -20,16 +20,15 @@
       </a-marker>
       
       <a-assets>
-        <a-asset-item id="man" src="models/Eevee/Eevee_ColladaMax.dae" position="0 3 4" rotation="0 180 0" scale="1 1 1"></a-model>
-        <a-asset-item id="man" src="models/Eevee/Eevee_ColladaMax.dae" position="0 3 -4" rotation="0 0 0" scale="1 1 1"></a-model>
-        <a-asset-item id="man" src="models/Eevee/Eevee_ColladaMax.dae" position="4 3 0" rotation="0 270 0" scale="1 1 1"></a-model>
-        <a-asset-item id="man" src="models/Eevee/Eevee_ColladaMax.dae" position="-4 3 0" rotation="0 90 0" scale="1 1 1"></a-model>
+        <a-asset-item id="eevee" src="models/Eevee/Eevee_ColladaMax.dae" position="0 3 4" rotation="0 180 0" scale="1 1 1"></a-asset-item>
+        <a-asset-item id="eevee" src="models/Eevee/Eevee_ColladaMax.dae" position="0 3 -4" rotation="0 0 0" scale="1 1 1"></a-asset-item>
+        <a-asset-item id="eevee" src="models/Eevee/Eevee_ColladaMax.dae" position="4 3 0" rotation="0 270 0" scale="1 1 1"></a-asset-item>
+        <a-asset-item id="eevee" src="models/Eevee/Eevee_ColladaMax.dae" position="-4 3 0" rotation="0 90 0" scale="1 1 1"></a-asset-item>
       </a-assets>
-      
-      <a-collada-model src="#man"></a-collada-model>
+     
 
       <!-- AR用のカメラを置く -->
-      <a-entity camera></a-entity>
+      <a-entity camera gltf-model="#eevee" modify-materials></a-entity>
 
     </a-scene>
   </body>
